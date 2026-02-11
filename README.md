@@ -14,3 +14,18 @@ py-Sudoku/
 │   └── bt-Sudoku.py     # Resolucion de Sudoku mediante backtracking (CSP)
 └── README.md
 ```
+
+## Requisitos y dependencias
+
+### Enfoque de vision por computadora (Sudoku/)
+
+- Python 3.x
+- TensorFlow / Keras
+- OpenCV (cv2)
+- NumPy
+- Matplotlib
+
+### Enfoque de backtracking (Backtracking/)
+
+- Python 3.x
+- simpleai
