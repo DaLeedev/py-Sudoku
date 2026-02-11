@@ -59,3 +59,26 @@ El archivo `Backtracking/bt-Sudoku.py` resuelve un Sudoku modelado como un probl
   - En cada columna.
   - En cada subcuadro de 3x3.
 - **Resolucion**: Se utiliza el algoritmo de backtracking proporcionado por `simpleai` para encontrar una asignacion valida que satisfaga todas las restricciones.
+
+## Como ejecutar
+
+### Backtracking
+
+```bash
+pip install simpleai
+python Backtracking/bt-Sudoku.py
+```
+
+El script imprimira la solucion del Sudoku definido en el codigo, o un mensaje indicando que no se encontro solucion.
+
+### Vision por computadora
+
+1. Instalar las dependencias:
+
+```bash
+pip install tensorflow opencv-python numpy matplotlib
+```
+
+2. Abrir y ejecutar el notebook `Sudoku/final.ipynb` celda por celda en Jupyter Notebook o JupyterLab.
+
+3. Asegurarse de que la imagen `sudo.png` se encuentre en el directorio `Sudoku/`.
