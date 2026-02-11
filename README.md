@@ -45,3 +45,17 @@ El notebook `Sudoku/final.ipynb` implementa un pipeline completo para reconocer 
 5. **Entrenamiento del modelo**: Se entrena una red neuronal convolucional (CNN) con el dataset MNIST, utilizando aumentacion de datos para mejorar la generalizacion. La arquitectura incluye capas convolucionales, max pooling, dropout y capas densas.
 
 6. **Reconocimiento de digitos**: Se utiliza el modelo entrenado para predecir el digito de cada celda. Las celdas vacias (con valor de pixel promedio bajo) se asignan como 0.
+
+## Enfoque de backtracking
+
+El archivo `Backtracking/bt-Sudoku.py` resuelve un Sudoku modelado como un problema de satisfaccion de restricciones (CSP) utilizando la biblioteca `simpleai`.
+
+### Funcionamiento
+
+- **Variables**: Cada celda del tablero 9x9 se representa como una tupla `(fila, columna)`.
+- **Dominios**: Las celdas vacias (valor 0) pueden tomar valores del 1 al 9. Las celdas con valores predefinidos tienen un dominio fijo con ese unico valor.
+- **Restricciones**: Se definen tres tipos de restricciones para garantizar que no haya numeros repetidos:
+  - En cada fila.
+  - En cada columna.
+  - En cada subcuadro de 3x3.
+- **Resolucion**: Se utiliza el algoritmo de backtracking proporcionado por `simpleai` para encontrar una asignacion valida que satisfaga todas las restricciones.
